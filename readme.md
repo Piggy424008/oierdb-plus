@@ -43,22 +43,25 @@ Records 字段用来指定获奖记录。接受多行，每行一个获奖记录
 
 Records 字段可以反复声明，OIerDB Lang 将会把所有提及的记录都作为合法的查询条件。
 
-#### initial 字段
+#### Initial 字段
 initial 字段用来指定姓名缩写。initial 字段仅能接受一行一个字符串，否则将会报错。  
 initial 字段的参数应为一个仅包含英文字母的字符串。其大小写不敏感。
 
-#### name 字段
+#### Name 字段
 name 字段用来指定姓名。name 字段仅能接受一行一个字符串，否则将会报错。  
 name 字段的参数应为一个仅包含汉字的字符串。
 
-#### gender 字段
+#### Gender 字段
 gender 字段用来指定性别。gender 字段仅能接受一行一个整数，否则将会报错。  
 gender 字段的值应在 $\{-1, 0, 1\}$，其中 $1$ 代表男性， $-1$ 代表女性， $0$ 代表性别未知。可能是因为获奖记录中未记录过其性别，或性别记录有误，或该选手是跨性别者，或其他情况，OIerDB Plus 不能很好的处理这种情况，如果想修改的请利用 GitHub Issue 向 **OIerDB 而不是 OIerDB Plus** 请求修改。
 
-#### enroll_middle 字段
+#### Enroll_middle 字段
 enroll_middle 字段用来指定一个人的初中入学年级。enroll_middle 字段仅能接受一行一个整数，否则将会报错。  
 enroll_middle 字段的参数应为一个合理的整数。因为各地学制不一定完全相同，所以这一项的计算可能会出错。
 
 #### CCF_level 字段
 CCF_level 字段用来指定姓名缩写。CCF_level 字段仅能接受一行一个整数，否则将会报错。  
 initial 字段的参数应为一个合理的整数。目前 CCF_level 应满足 $0\le x\le 10$。
+
+### OIerDB Demo
+这个仓库中的代码使用 Python 下的 Django 框架。运行此项目以后，即会生成一个 Web 站点，你可以在前端使用它来进行查询。
