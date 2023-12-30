@@ -29,7 +29,7 @@ xxx
 xxx
 ```
 
-OIerDB Plus Lang 接受的字段名有：Records, initial, name, gender, enroll_middle, CCF Level。  
+OIerDB Plus Lang 接受的字段名有：Records, Initial, Name, Gender, Enroll_middle, CCF Level。  
 #### Records 字段
 Records 字段用来指定获奖记录。接受多行，每行一个获奖记录，用 JSON 格式来表达。合法的 JSON 键值对仅包括以下描述的几个：
 
